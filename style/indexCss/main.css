@@ -1,0 +1,857 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* top header */
+.layoutLine {
+  height: 100%;
+  width: 1175px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .layoutLine {
+    width: 88%;
+  }
+}
+
+/* grid on typesofpayment(2) page */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #DCD7D7;
+  padding: 10px;
+  position: relative;
+  top: -22px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 28px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item .typLines{
+  font-size: 14px;
+}
+
+.grid-item img{
+  height: 26px;
+  width: auto;
+}
+
+/* Profile on Payment details(5)page */
+.paymentProfilePerson{
+  width: 100%;
+  height: 100px;
+  background-color: #DCD7D7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+
+.paymentProfilePerson .profileImg{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  background-image: url("../../images/aassve.JPG");
+  background-position: center;
+  background-size: cover;
+  margin-right: 6px;
+
+
+}
+
+.namePro{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  background-color: #DCD7D7;
+  border-bottom: 1px solid #222;
+}
+
+.paymentProfilePerson .boxs{
+  width: 60%;
+  height: 100px;
+  background-color: transparent;
+  line-height: 24px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .layoutLine {
+    width: 100%;
+  }
+}
+/* mobile top navbar*/
+.mobohearder {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 62px;
+  background-color: #ae275f;
+  z-index: 99999;
+}
+
+@media screen and (max-width: 800px) {
+  .mobohearder {
+    display: block !important;
+  }
+}
+
+/* mobile top navbar icon*/
+.mobohearder .fa-bars {
+  color: #fff;
+  font-size: 26px;
+  padding: 24px;
+  position: relative;
+  top: -6px;
+  float: left;
+}
+/* Mobile top header icons */
+.flIcons{
+  color: #fff;
+  font-size: 26px;
+  padding: 6px;
+  position: relative;
+  top: -6px;
+  float: left;
+}
+
+
+/* mobile top navbar axis bank logo*/
+.mobohearder .logo {
+  height: 26px;
+  width: 114px;
+  float: left;
+  position: relative;
+  top: 18px;
+  left: 2px;
+  background-image: url("../../images/white axis.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .mobohearder {
+    display: none;
+  }
+}
+/* hamburger*/
+.mobohearder .moboheaderConter {
+  height: 100%;
+  width: 0px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 99999;
+  top: 62px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.mobohearder .moboheaderConter ul {
+  position: relative;
+  right: 22px;
+  top: 12px;
+}
+
+.mobohearder .moboheaderConter ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.061);
+}
+
+.mobohearder .moboheaderConter ul li a {
+  color: #ae275f;
+  text-decoration: none;
+}
+
+.mobohearder .moboStyle {
+  width: 60% !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.mobohearder .moboStyle2 {
+  width: 0% !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.mobohearder .overflow {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.308);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+  top: 62px;
+}
+/* top header for desktop website */
+#topHeader {
+  background-color: #E4E1E1;
+  width: 100%;
+  height: 46px;
+  position: relative;
+  top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #topHeader {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #topHeader {
+    display: none;
+  }
+}
+
+#topHeader ul {
+  margin: 0;
+  position: relative;
+  left: -48px;
+}
+
+#topHeader ul li {
+  list-style: none;
+  float: left;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 4px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#topHeader ul li:hover {
+  color: #fff;
+  background-color: #ae275f;
+}
+
+#topHeader ul li:hover a {
+  color: #fff;
+}
+
+#topHeader ul li a {
+  text-decoration: none;
+  color: #ae275f;
+}
+
+#topHeader .searchDiv {
+  width: 300px;
+  height: 46px;
+  float: right;
+}
+
+@media screen and (max-width: 1200px) {
+  #topHeader .searchDiv {
+    display: none;
+  }
+}
+
+#topHeader .searchDiv .notifyImg {
+  position: relative;
+  top: 9.6px;
+  height: auto;
+  width: 22px;
+}
+
+#topHeader .searchDiv span {
+  position: relative;
+  left: 26px;
+  color: #ae275f;
+  padding: 6px;
+}
+
+#topHeader .searchDiv span .text {
+  position: relative;
+  top: 1.8px;
+  padding: 4px;
+  padding-left: 8px;
+  outline: none !important;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  width: 124px;
+  border: 1px solid rgba(34, 34, 34, 0.293);
+}
+
+header {
+  height: 62px;
+  width: 100%;
+  background-color: #fff;
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(174, 39, 95, 0.747);
+}
+/* for making the code resonpsive */
+@media screen and (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: none;
+  }
+}
+/* top header2 */
+header .logo {
+  float: left;
+  height: 42px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 158px;
+  background-image: url("../../images/Axis_Bank_logo_logotype.png");
+  background-position: center;
+  background-size: cover;
+}
+
+header ul {
+  float: left;
+}
+
+header ul li {
+  position: relative;
+  top: -9.4px;
+  list-style: none;
+  float: left;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+  margin-left: 24px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+header ul li a {
+  color: #222;
+  text-decoration: none;
+}
+
+header .loginDiv {
+  position: relative;
+  top: 10px;
+  left: 8px;
+  width: auto;
+  height: auto;
+  float: right;
+}
+
+header .loginDiv .btn {
+  height: 42px;
+  width: 122px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #ae275f;
+  border: 1px solid #e6e1e1;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  margin-right: 14px;
+}
+
+header .loginDiv .btn:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  margin-top: 62px;
+}
+/* Headings of key tasks */
+.headingDivs span{
+  position: relative;
+  top: -4px;
+  font-size: 18px;
+}
+
+.main .headingDivs {
+  color: rgba(34, 34, 34, 0.872);
+  font-size: 26px;
+  position: relative;
+  top: 22px;
+  width: 100%;
+}
+/* making code responsive */
+@media screen and (max-width: 480px) {
+  .main .headingDivs {
+    font-size: 18px;
+    top: 18px;
+  }
+
+  .headingDivs span{
+    top: -2px;
+    font-size: 16px;
+  }
+}
+
+/* Headings of key tasks */
+.main .headingDivs span {
+  position: relative;
+  background-color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  letter-spacing: 2px;
+}
+
+/* upper carousel */
+.main .sliderContener {
+  margin: auto;
+  width: 1175px;
+}
+
+.main ._slider {
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+  margin: auto;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .main ._slider {
+    top: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main ._slider {
+    width: 100% !important;
+    position: relative;
+    top: 22px;
+  }
+}
+
+.main ._slider:hover ._slider_next,
+.main ._slider:hover ._slider_prev {
+  display: block;
+}
+
+.main ._slider_next, .main ._slider_prev {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  padding: 2% 4%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2em;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.main ._slider_next:hover, .main ._slider_prev:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main ._slider_next {
+  right: 0;
+}
+
+.main ._slider ul {
+  position: relative;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main ._slider ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  width: 1175px;
+  height: 400px;
+  line-height: 200px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .main ._slider ul li {
+    width: 100% !important;
+    height: 180px;
+  }
+}
+
+.main ._slider ul .slide1 {
+  background-image: url("../../images/1.jpg");
+}
+
+.main ._slider ul .slide2 {
+  background-image: url("../../images/2.jpg");
+}
+
+.main ._slider ul .slide3 {
+  background-image: url("../../images/3.jpg");
+}
+
+.main ._slider ul .slide4 {
+  background-image: url("../../images/2.jpg");
+}
+/* footer*/
+footer .layoutLine{
+	width: 84%; 
+	text-align: left;
+}
+
+/* Bottom Carousel*/
+.main .productDiv {
+  margin-top: 14px;
+  height: auto;
+}
+
+.main .productDiv .productContainter {
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 38px;
+  padding-bottom: 38px;
+}
+
+/*key tasks icons background*/
+.main .productDiv .productBox {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 4px solid #e5e5e5;
+  background: #fff;
+  width: 266px;
+  height: 162px;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  background: #E9E7E7;
+}
+
+@media screen and (max-width: 480px) {
+  .main .productDiv .productBox {
+    width: 152px;
+    height: 124px;
+  }
+}
+
+/*key tasks icons */
+.main .productDiv .productBox .productBoxinner {
+  width: 106px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main .productDiv .productBox .imgBox {
+  height: 85px;
+  position: relative;
+  top: 10px;
+}
+
+.main .productDiv .productBox img {
+  width: 50px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .productDiv .productBox .lines {
+  margin-top:50 px;
+  font-size: 18px;
+  text-align: center;
+	
+ 
+}
+/*Bottom Carousel */
+.main #slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .main #slider {
+    position: relative;
+    top: 22px;
+  }
+}
+/*Bottom Carousel */
+.main #slider img {
+  display: none;
+  height: 380px;
+  width: 100%;
+}
+
+.main #slider img.show {
+  display: inline;
+}
+
+@media screen and (max-width: 480px) {
+  .main #slider img {
+    height: 218px;
+  }
+}
+/*footer */
+footer {
+  margin-top: 42px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #444;
+  color: #e4e4e4;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    text-align: center;
+  }
+}
+/*Scroll for mobile of icons */
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+  display: inline-block;
+}
+
+.loginMain {
+  height: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .divProduct3 {
+    display: none;
+  }
+}
+
+.mainInnerBox {
+  position: relative;
+  top: 58px;
+  margin: auto;
+  width: 460px;
+
+}
+
+@media screen and (max-width: 480px) {
+  .mainInnerBox {
+    width: 80%;
+  }
+}
+
+.mainInnerBox .viewPage {
+  position: relative;
+  top: -22px;
+  width: 100%;
+  font-size: 20px;
+  padding-bottom: 12px;
+color: #ae275f;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.256);
+text-align: center;
+}
+/*back arrow */
+.mainInnerBox .viewPage .fa-chevron-left {
+  font-size: 20px;
+  color: #ae275f;
+  margin-right: 12px;
+}
+
+.mainInnerBox a {
+  text-decoration: none;
+  color: #222;
+}
+/* name of the page*/
+.mainInnerBox .text {
+  width: calc(100% - 8px - 2px);
+  padding: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  font-size: 15.2px;
+  outline: none;
+  color: #ae275f;
+  border: 1px solid rgba(34, 34, 34, 0.281);
+}
+/*dropdown on billDetails(4)page */
+.mainInnerBox .dropdown {
+  background-color: #fff;
+  width: calc(100% - 2px);
+  padding: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  font-size: 15.2px;
+  outline: none;
+  color: rgba(34, 34, 34, 0.793);
+  border: 1px solid rgba(34, 34, 34, 0.281);
+}
+
+.mainInnerBox .h3 {
+  color: rgba(34, 34, 34, 0.907);
+  padding-bottom: 4px;
+}
+
+.mainInnerBox .h4 {
+  padding-top: 4px;
+  font-size: 14px;
+  color: rgba(34, 34, 34, 0.707);
+}
+
+.mainInnerBox .btn {
+  margin-top: 34px;
+}
+
+.mainInnerBox table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mainInnerBox td {
+  color: rgba(34, 34, 34, 0.749);
+  padding-top: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.356);
+}
+
+.mainInnerBox .typeD {
+  width: 120px;
+}
+
+.mainInnerBox .productDiv {
+  float: left;
+}
+
+.mainInnerBox .productBox {
+  width: 124px !important;
+  height: 96px !important;
+  border: none !important;
+  margin-right: 4px !important;
+  margin-left: 4px !important;
+}
+
+.mainInnerBox .productBox img {
+  width: 38px !important;
+}
+
+.mainInnerBox .productBox .lines {
+  position: relative;
+  top: -6px;
+  font-size: 14px !important;
+}
+
+.mainInnerBox .scrolling-wrapper .card {
+  display: block;
+}
+/* paynow Button on payment page*/
+.paynow{
+	height: 42px;
+  width: 126px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #ae275f;
+  border: 1px solid #e6e1e1;
+  outline: none;
+  cursor: pointer;
+
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+	
+/* Button on all page*/
+.btn {
+  height: 42px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #ae275f;
+  border: 1px solid #e6e1e1;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.021);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+/* Button on payment page*/
+.bottombutton {
+	text-align: left;
+	height: 42px;
+  width: 150px;
+border-radius: 6px;
+}
+/* on desktop website part*/
+.btn:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+/* text on confirmation page*/
+center {
+	font-size:10px;
+	color:#ae295e;
+	}
+
+/* Positioning of icons on mobile website*/
+.wrrapMobo{
+float: right;
+    right: 18px;
+    position: relative;
+    top: 18px;
+}
